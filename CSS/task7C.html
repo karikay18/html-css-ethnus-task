@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 CSS</title>
+    <style>
+        body {
+            font-size: large;
+            text-align: center;
+            background-color: rgb(238, 70, 104);
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%; 
+            margin: 0 auto;
+            border: 1px solid #000; 
+            background-color: rgb(153, 5, 79);
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #000; 
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2; 
+        }
+        input[type="button"] {
+            padding: 10px 300px;
+            font-size: large;
+            background-color: silver; 
+            border: none;
+            color: black;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 15px;
+        }
+
+        input[type="button"]:hover {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task 7</h1>
+    <form>
+        <center>
+            <table>
+                <tr>
+                    <td><label for="fn">Name:</label></td>
+                    <td><input type="text" name="nm" placeholder="Enter your Name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="un">Email:</label></td>
+                    <td><input type="email" name="un" placeholder="Enter your Email"/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pwd">Password:</label><br></td>
+                    <td><input type="password" id="pwd" name="pwd" placeholder="Enter your password"></td>
+                </tr>
+                <tr>
+                    <td><label for="ag">Phone Number:</label></td>
+                    <td><input type="number" name="pn" placeholder="Enter your phone number"/></td>
+                </tr>
+                <tr>
+                    <td><label for="gen">Gender:</label></td>
+                    <td><label for="Gender">Male</label>
+                        <input type="radio" name="Gender" value="Male">
+                        <label for="Gender">Female</label> 
+                        <input type="radio" name="Gender" value="Female">
+                        <label for="Gender">Other</label>
+                        <input type="radio" name="Gender" value="Other"></td>
+                </tr>
+                <tr>
+                    <td><label>Language:</label></td>
+                    <td>
+                        <select name = 'Choose your Language' value="Choose your Language">
+                            <option>English</option>
+                            <option>Hindi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="st">Zipcode</label></td>
+                    <td><input type="number" name="zp" placeholder="Enter your Zipcode"/></td>
+                </tr>
+                <tr>
+                    <td><label for="ad">About</label></td>
+                    <td><textarea>Write About Yourself</textarea></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+    <center>
+        <input type="button" value="Register" />
+    </center>
+</body>
+</html>
